@@ -12,7 +12,7 @@ const Notfound = () => {
             href="/"
             className="bg-white text-blue-600 font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-100 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
           >
-            Voltar para a Home
+            Voltar para o início
           </a>
   
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">

@@ -5,6 +5,7 @@ import cachorroquentecapa from './assets/cachorroquentecapa.jpg';
 import regulamento from './assets/regulamento.jpg';
 import thalita from './assets/thalita.jpeg';
 import marcelo from './assets/marcelo.jpeg';
+import robo from './assets/robosumo.webp';
 
 // [Previous icon components remain the same]
 const CalendarIcon = () => (
@@ -65,6 +66,65 @@ const RegIcon = () => (
   </svg>
 );
 
+const RobotIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-5 h-5 sm:w-6 sm:h-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    {/* Antena */}
+    <line x1="12" y1="2" x2="12" y2="5" strokeLinecap="round" strokeWidth={2} />
+    <circle cx="12" cy="1" r="1" fill="currentColor" />
+
+    {/* Cabeça */}
+    <rect
+      x="6"
+      y="5"
+      width="12"
+      height="7"
+      rx="2"
+      stroke="currentColor"
+      strokeWidth={2}
+      fill="none"
+    />
+
+    {/* Olhos e Sobrancelhas */}
+    <line x1="8" y1="8" x2="9" y2="8" strokeWidth={2} strokeLinecap="round" />
+    <line x1="8" y1="7" x2="9.5" y2="7" strokeWidth={2} strokeLinecap="round" />
+    <line x1="15" y1="8" x2="16" y2="8" strokeWidth={2} strokeLinecap="round" />
+    <line x1="14.5" y1="7" x2="16" y2="7" strokeWidth={2} strokeLinecap="round" />
+
+    {/* Boca */}
+    <line x1="9" y1="10" x2="15" y2="10" strokeWidth={2} strokeLinecap="round" />
+
+    {/* Corpo */}
+    <rect
+      x="7"
+      y="12"
+      width="10"
+      height="6"
+      rx="1"
+      stroke="currentColor"
+      strokeWidth={2}
+      fill="none"
+    />
+
+    {/* Braços */}
+    <line x1="4" y1="13" x2="6" y2="13" strokeWidth={2} strokeLinecap="round" />
+    <line x1="18" y1="13" x2="20" y2="13" strokeWidth={2} strokeLinecap="round" />
+
+    {/* Pernas */}
+    <line x1="9" y1="18" x2="9" y2="21" strokeWidth={2} strokeLinecap="round" />
+    <line x1="15" y1="18" x2="15" y2="21" strokeWidth={2} strokeLinecap="round" />
+
+    {/* Pés */}
+    <line x1="8" y1="21" x2="10" y2="21" strokeWidth={2} strokeLinecap="round" />
+    <line x1="14" y1="21" x2="16" y2="21" strokeWidth={2} strokeLinecap="round" />
+  </svg>
+);
+
 const EventCard = ({ title, description, imageSrc, icon: Icon, link }) => (
   <div className="w-full max-w-sm mx-auto bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:transform hover:scale-105">
     <div className="relative h-48 sm:h-[200px] overflow-hidden">
@@ -120,6 +180,13 @@ const EventPage = () => {
       icon: RegIcon,
       imageSrc: regulamento,
       link: "/regulamento"
+    },
+    {
+      title: "Robôs Sumô",
+      description: "Campeonato do Projeto de robótica. Fase 2, Robôs de sumô autônomos. Acesse o regulamento também.",
+      icon: RobotIcon,
+      imageSrc: robo,
+      link: "/robotica"
     }
   ];
 

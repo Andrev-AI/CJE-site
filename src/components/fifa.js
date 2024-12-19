@@ -8,11 +8,13 @@ function Fifa() {
       <div className='text-center mt-10 lg:mt-0 lg:ml-5'>
       <h3 className='text-3xl font-bold text-gray-800 mb-5'>FIFA 2024</h3>
         <p className='text-black mt-2 text-xl font-bold'>
-          O FIFA 2024 traz uma experiência de jogo ainda mais realista com gráficos aprimorados, novas mecânicas de jogo e modos de jogo emocionantes. Ele estará disponível no nosse evento para ser jogado. Jogadores competirão entre sí em uma partida onde o vencedor jogará outras e poderá ganhar um prêmio. Você poderá jogar com controle de playstation ou xbox então esteje preparado. Esteje pronto!
+          O FIFA 2024 traz uma experiência de jogo ainda mais realista com gráficos aprimorados, novas mecânicas de jogo e modos de jogo emocionantes. Ele estará disponível no nosso evento para ser jogado. Jogadores competirão entre sí em uma partida onde o vencedor continuará jogando outras partidas e poderá ganhar um prêmio. Você poderá jogar com controle de playstation ou xbox então esteje preparado. Fique preparado!
         </p>
-        <div></div>
-        <a href='/regulamento' className='w-52 mt-10 flex items-center justify-center h-10 bg-rose-500 hover:bg-rose-700 rounded-lg text-lg p-3'>Leia as regras aqui</a>
-        <a href='https://forms.gle/UDUEp2JutKHY2Yyj6' className='mt-4 flex items-center justify-center w-full h-10 bg-green-500 hover:bg-green-600 rounded-lg text-lg p-3'>Inscrever-se</a>
+        <div className='w-full h-10 grid grid-cols-2 mt-10 gap-x-3'>
+          <a href='/regulamento' className='h-12 flex items-center justify-center bg-rose-500 hover:bg-rose-700 rounded-lg text-lg p-3'>Leia as regras aqui</a>
+          <a href='https://forms.gle/UDUEp2JutKHY2Yyj6' className='h-12 flex items-center justify-center bg-green-500 hover:bg-green-600 rounded-lg text-lg p-3'>Inscrever-se</a>
+        </div>
+        
       </div>
     </div>
   )

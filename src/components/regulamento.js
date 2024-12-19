@@ -9,7 +9,7 @@ const Regulamento = () => {
         "FIFA 2024 - PS4, PS5, Xbox One, Nintendo Switch.",
         "Just Dance - Xbox 360 com Kinect",
         "Área livre - PS4",
-        "Competição de Robô de sumor - Robôs autônomos"
+        "Competição de Robô de sumô - Robôs autônomos"
       ]
     },
     {
@@ -18,7 +18,7 @@ const Regulamento = () => {
       content: [
         "FIFA: Partidas individuais, formato de eliminação com repescagem",
         "Just Dance: Duplas competem, duas músicas por round",
-        "Robô sumo: Três rounds de 1 minuto cada, melhor de três vitórias"
+        "Robô sumô: Três rounds de 1 minuto cada, melhor de três vitórias"
       ]
     },
     {
@@ -35,7 +35,7 @@ const Regulamento = () => {
       title: "Regra dos participantes",
       icon: "👥",
       content: [
-        "Chegar 5 minutes antes do horário referido anteriormente",
+        "Chegar 5 minutos antes do horário referido anteriormente",
         "Jogo limpo, respeito mútuo e mostrar espírito esportivo",
         "Siga regras e formatos específicos do jogo",
         "Não é permitido desrespeito verbal"
@@ -47,7 +47,7 @@ const Regulamento = () => {
     <div className="max-w-4xl mx-auto p-6 space-y-8">
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold mb-4">Regras do torneio</h1>
-        <p className="text-gray-600">IF Goiano Campus Campos Belos - Campeonato de Jogos Eletrônicos (CJE)</p>
+        <p className="text-gray-600">IF Goiano Campus Campos Belos - 1º Campeonato de Jogos Eletrônicos (CJE)</p>
       </div>
 
       <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
@@ -91,6 +91,7 @@ const Regulamento = () => {
           <p>• Disponível quarta e quinta, 13:30 - 17:30</p>
         </div>
         <div className='mt-5 text-red-600 font-bold cursor-pointer'><a href='https://docs.google.com/document/d/1rPc_Z7cQ2fNyC22KNRzAT-ZPJHntQAQhRBXvDvnomT0/edit?tab=t.0'>Clique para baixar PDF do regulamento completo.</a></div>
+        <div className='mt-3 text-blue-600 font-bold cursor-pointer'><a href='https://forms.gle/CB8cGGHrSf3nMUKV6'>Clique ver formulário de inscrição</a></div>
       </div>
     </div>
   );

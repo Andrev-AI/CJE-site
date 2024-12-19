@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Fifa from "./components/fifa";
 import Justdance from "./components/justdance";
 import Regulamento from "./components/regulamento";
+import Robotica from "./components/robotica";
 import Notfound from './components/notfound';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/fifa" element={<Fifa />} />
           <Route path="/justdance" element={<Justdance />} />
           <Route path="/regulamento" element={<Regulamento />} />
+          <Route path="/robotica" element={<Robotica />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
       </BrowserRouter>

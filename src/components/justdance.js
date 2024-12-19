@@ -12,8 +12,10 @@ function Fifa() {
         No nosso evento, você poderá desafiar uma pessoa em uma batalha de dança e mostrar o seu talento na pista! O vencedor avança para a próxima rodada e pode conquistar prêmios caso esteja no pódio. 
         Usaremos o kinect do Xbox para capturar cada movimento. Esteja pronto(a) para brilhar! 💃🕺 <br/>
         </p>
-          <a href='/regulamento' className='w-52 mt-10 flex items-center justify-center h-10 bg-rose-500 hover:bg-rose-700 rounded-lg text-lg p-3'>Leia as regras aqui</a>
-          <a href='https://forms.gle/UDUEp2JutKHY2Yyj6' className='mt-4 flex items-center justify-center w-full h-10 bg-green-500 hover:bg-green-600 rounded-lg text-lg p-3'>Inscrever-se</a>
+        <div className='w-full h-10 grid grid-cols-2 mt-10 gap-x-3'>
+          <a href='/regulamento' className='h-12 flex items-center justify-center bg-rose-500 hover:bg-rose-700 rounded-lg text-lg p-3'>Leia as regras aqui</a>
+          <a href='https://forms.gle/UDUEp2JutKHY2Yyj6' className='h-12 flex items-center justify-center bg-green-500 hover:bg-green-600 rounded-lg text-lg p-3'>Inscrever-se</a>
+        </div>
       </div>
     </div>
   )
