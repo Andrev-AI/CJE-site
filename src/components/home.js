@@ -13,7 +13,7 @@ const Home = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
-          filter: 'sepia(60%) saturate(200%) hue-rotate(-10deg)',
+          filter: 'sepia(50%) saturate(100%) hue-rotate(-10deg)',
         }}
         className="w-full h-screen"
       >

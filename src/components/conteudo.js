@@ -2,6 +2,8 @@ import React from 'react';
 import fifacapa from './assets/fifabanner.webp';
 import justdancecapa from './assets/justdancecapa.jpg';
 import cachorroquentecapa from './assets/cachorroquentecapa.jpg';
+import thalita from './assets/thalita.jpeg'
+import marcelo from './assets/marcelo.jpeg'
 
 const CalendarIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -21,9 +23,9 @@ const UtensilsIcon = () => (
   </svg>
 );
 
-const EventCard = ({ title, description, icon: Icon, imageSrc, link }) => (
+const EventCard = ({ title, description, imageSrc, icon: Icon, link }) => (
   <div className="w-full sm:w-[350px] bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:transform hover:scale-105">
-    <div className="relative h-[200px] overflow-hidden">
+    <div className="relative h-[200px] overflow-hidden justify-between">
       <img 
         className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" 
         src={imageSrc} 
@@ -73,7 +75,7 @@ const EventPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
+    <div className="min-h-screen bg-gradient-to-b from-zinc-500 to-black text-white">
       <section className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
@@ -93,11 +95,16 @@ const EventPage = () => {
               <p className="text-gray-300">Thalica Cintra, Marcelo Brandão e outros</p>
             </div>
           </div>
-          <div className="relative">
+          <div className="w-full md:w-1/2 flex flex-col md:flex-row relative space-y-2 md:space-y-0 md:space-x-2 mx-auto">
             <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-3xl" />
             <img
-              className="relative rounded-lg shadow-2xl"
-              src={fifacapa}
+              className="relative rounded-lg shadow-2xl w-72 mx-auto md:mx-0"
+              src={thalita}
+              alt="Event Cover"
+            />
+            <img
+              className="relative rounded-lg shadow-2xl mx-auto md:mx-0"
+              src={thalita}
               alt="Event Cover"
             />
           </div>
