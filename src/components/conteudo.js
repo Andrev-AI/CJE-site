@@ -94,7 +94,7 @@ const EventPage = () => {
             </div>
           </div>
           <div className="relative">
-            {/* <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-3xl" /> */}
+            <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-3xl" />
             <img
               className="relative rounded-lg shadow-2xl"
               src={fifacapa}
