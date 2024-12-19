@@ -82,7 +82,7 @@ const EventPage = () => {
             </h1>
             <div className="flex items-center gap-2 mb-4">
               <CalendarIcon />
-              <span className="text-xl text-blue-400">15 de Janeiro 2025</span>
+              <span className="text-xl text-blue-400">29 de Janeiro 2025</span>
             </div>
             <p className="text-lg text-gray-300 mb-6">
               Evento organizado pelo 3º Informática do IF Goiano CB para a disciplina de Educação Física.

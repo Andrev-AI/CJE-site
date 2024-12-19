@@ -25,7 +25,7 @@ const Home = () => {
           <div style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>Campeonato de Jogos Eletrônicos</div>
           <div  style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>Instituto Federal Goiano</div>
           <div className="w-full text-[28px] flex items-center justify-center font-semibold font-[helvetica] mt-3"  style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
-            15 Janeiro • Campos Belos - GO
+            29 Janeiro • Campos Belos - GO
           </div>
           <div className="w-full text-[28px] flex items-center justify-center font-semibold font-[helvetica] mt-14"  style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}>
             Cerrado Digital
