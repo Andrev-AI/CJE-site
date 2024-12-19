@@ -3,6 +3,9 @@ import Home from "./components/home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Fifa from "./components/fifa";
 import Justdance from "./components/justdance";
+import Regulamento from "./components/regulamento";
+import Notfound from './components/notfound';
+
 function App() {
   return (
     <div className="w-screen h-screen">
@@ -11,6 +14,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/fifa" element={<Fifa />} />
           <Route path="/justdance" element={<Justdance />} />
+          <Route path="/regulamento" element={<Regulamento />} />
+          <Route path="*" element={<Notfound />} />
         </Routes>
       </BrowserRouter>
     </div>

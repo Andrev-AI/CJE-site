@@ -2,6 +2,7 @@ import React from 'react';
 import fifacapa from './assets/fifabanner.webp';
 import justdancecapa from './assets/justdancecapa.jpg';
 import cachorroquentecapa from './assets/cachorroquentecapa.jpg';
+import regulamento from './assets/regulamento.jpg';
 import thalita from './assets/thalita.jpeg';
 import marcelo from './assets/marcelo.jpeg';
 
@@ -21,6 +22,46 @@ const GamepadIcon = () => (
 const UtensilsIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.5 21v-2.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M4.5 3h15M5 3v18m14-18v18" />
+  </svg>
+);
+
+const RegIcon = () => (
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-6 h-6 sm:w-8 sm:h-8"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M6 2c1.5 0 3 1 3 2.5S7.5 7 6 7H4V4c0-1.5 1-2 2-2zM18 2c-1.5 0-3 1-3 2.5S16.5 7 18 7h2V4c0-1.5-1-2-2-2z"
+    />
+    <rect
+      x="4"
+      y="7"
+      width="16"
+      height="10"
+      rx="2"
+      ry="2"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+    />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M6 10h12M6 14h8"
+    />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M6 21c1.5 0 3-1 3-2.5S7.5 16 6 16H4v3c0 1.5 1 2 2 2zM18 21c-1.5 0-3-1-3-2.5s1.5-2.5 3-2.5h2v3c0 1.5-1 2-2 2z"
+    />
   </svg>
 );
 
@@ -72,6 +113,13 @@ const EventPage = () => {
       icon: UtensilsIcon,
       imageSrc: cachorroquentecapa,
       link: "/alimentacao"
+    },
+    {
+      title: "Regulamento ilustrado",
+      description: "Veja o regulamento de forma ilustrada. E também o PDF na íntegra. Importante para todos os participantes.",
+      icon: RegIcon,
+      imageSrc: regulamento,
+      link: "/regulamento"
     }
   ];
 
@@ -138,7 +186,7 @@ const EventPage = () => {
             </li>
             <li className="flex items-start">
               <span className="mr-2">•</span>
-              <span>Inscrições: Gratuitas, realizar no formulário *por link*</span>
+              <span>Inscrições: Gratuitas, realizar no formulário (obrigatório): <a className='text-blue-500' href='https://forms.gle/CB8cGGHrSf3nMUKV6'>link formulario  </a></span>
             </li>
             <li className="flex items-start">
               <span className="mr-2">•</span>
