@@ -1,7 +1,8 @@
 import React from 'react';
 import fifacapa from './assets/fifabanner.webp';
-import justdancecapa from './assets/justdancecapa.jpg';
-import cachorroquentecapa from './assets/cachorroquentecapa.jpg';
+import justdancecapa from './assets/justdance.jpg';
+import arealivre from './assets/arealivre.jpg';
+import alimentacao from './assets/alimentação.jpg';
 import regulamento from './assets/regulamento.jpg';
 import thalita from './assets/thalita.jpeg';
 import marcelo from './assets/marcelo.jpeg';
@@ -168,10 +169,17 @@ const EventPage = () => {
       link: "/justdance"
     },
     {
+      title: "Área Livre",
+      description: "Jogos livres para todo mundo fora do compeonato",
+      icon: GamepadIcon,
+      imageSrc: arealivre,
+      link: "/arealivre"
+    },
+    {
       title: "Área de Alimentação",
       description: "Deliciosos lanches e bebidas disponíveis durante todo o evento. Experimente nosso famoso cachorro-quente!",
       icon: UtensilsIcon,
-      imageSrc: cachorroquentecapa,
+      imageSrc: alimentacao,
       link: "/alimentacao"
     },
     {
@@ -209,7 +217,7 @@ const EventPage = () => {
             </p>
             <div className="p-4 bg-gray-800/50 rounded-lg">
               <h2 className="text-lg sm:text-xl font-semibold mb-2">Apoiadores:</h2>
-              <p className="text-gray-300 text-sm sm:text-base">Thalica Cintra, Marcelo Brandão e outros</p>
+              <p className="text-gray-300 text-sm sm:text-base">Thalita Cintra, Marcelo Brandão, André Moura, André Wild, Amarildo, Thiago C. Thiago Dias, Guilherme Costa, Gusthavo Oliveira, Darsílvio e outros</p>
             </div>
           </div>
 
@@ -253,11 +261,11 @@ const EventPage = () => {
             </li>
             <li className="flex items-start">
               <span className="mr-2">•</span>
-              <span>Inscrições: Gratuitas, realizar no formulário (obrigatório): <a className='text-blue-500' href='https://forms.gle/CB8cGGHrSf3nMUKV6' target='_blank'>link formulario  </a></span>
+              <span>Inscrições: Gratuitas, realizar no formulário (obrigatório): <a className='text-blue-500' href='https://forms.gle/CB8cGGHrSf3nMUKV6' target='_blank'>link formulário  </a></span>
             </li>
             <li className="flex items-start">
               <span className="mr-2">•</span>
-              <span>Área livre para jogos diversos (FIFA, Mortal Kombat e outros)</span>
+              <span>Área livre para jogos diversos (Mortal Kombat, Tênis, Brawlhalla e outros)</span>
             </li>
             <li className="flex items-start">
               <span className="mr-2">•</span>
