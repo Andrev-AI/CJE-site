@@ -18,7 +18,7 @@ const Regulamento = () => {
       content: [
         "FIFA: Partidas individuais, formato de eliminação com repescagem",
         "Just Dance: Duplas competem, duas músicas por round",
-        "Robô sumô: Três rounds de 1 minuto cada, melhor de três vitórias"
+        "Robô sumô: Três rounds de 1 minuto cada, melhor de três vitórias. Inscrição comunidade interna: 17/01/2025. Comunidade externa: 26/01/2025"
       ]
     },
     {
@@ -90,8 +90,8 @@ const Regulamento = () => {
           <p>• Telefone/WhatsApp: (62)996721213</p>
           <p>• Disponível quarta e quinta, 13:30 - 17:30</p>
         </div>
-        <div className='mt-5 text-red-600 font-bold cursor-pointer'><a href='https://docs.google.com/document/d/1rPc_Z7cQ2fNyC22KNRzAT-ZPJHntQAQhRBXvDvnomT0/edit?tab=t.0'>Clique para baixar PDF do regulamento completo.</a></div>
-        <div className='mt-3 text-blue-600 font-bold cursor-pointer'><a href='https://forms.gle/CB8cGGHrSf3nMUKV6'>Clique ver formulário de inscrição</a></div>
+        <div className='mt-5 text-red-600 font-bold cursor-pointer'><a href='https://docs.google.com/document/d/1rPc_Z7cQ2fNyC22KNRzAT-ZPJHntQAQhRBXvDvnomT0/edit?tab=t.0' target='_blank'>Clique para baixar PDF do regulamento completo.</a></div>
+        <div className='mt-3 text-blue-600 font-bold cursor-pointer'><a href='https://forms.gle/CB8cGGHrSf3nMUKV6'target='_blank' >Clique ver formulário de inscrição</a></div>
       </div>
     </div>
   );

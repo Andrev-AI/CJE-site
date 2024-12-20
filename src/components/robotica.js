@@ -29,7 +29,11 @@ const Robotica = () => {
               <p className="text-lg leading-relaxed">
                 Os combates são uma prova de resistência com duração de 1 minuto 
                 por round, seguindo até a fase final em um total de 3 rounds, 
-                conforme as regras descritas.
+                conforme as regras descritas. Data máxima para inscrição da comunidade interna: 17/01/2025  
+              </p>
+              <p className="text-lg leading-relaxed">
+                Para quem não estiver no projeto (inclusive comunidade externa) e quiser participar do campeonato, envie um email antecipado para <strong>marcelo.santos@ifgoiano.edu.br</strong>   e ter um robô pronto 
+                seguindo as regras estabelecidas. Prazo máximo: 26/01/2024.
               </p>
             </div>
             
@@ -41,7 +45,7 @@ const Robotica = () => {
                           shadow-lg hover:shadow-rose-500/50">
                 Regras Ilustradas
               </a>
-              <a href="https://docs.google.com/document/d/1rPc_Z7cQ2fNyC22KNRzAT-ZPJHntQAQhRBXvDvnomT0/edit?tab=t.0"
+              <a target='_blank' href="https://docs.google.com/document/d/1rPc_Z7cQ2fNyC22KNRzAT-ZPJHntQAQhRBXvDvnomT0/edit?tab=t.0"
                  className="flex-1 py-3 px-3 bg-white/20 hover:bg-white/30 
                           rounded-lg text-white text-lg font-semibold 
                           transition-colors duration-300 text-center
@@ -50,13 +54,11 @@ const Robotica = () => {
               </a>
             </div>
           </div>
-
-          {/* Image Section */}
-          <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative w-full h-[250px] md:h-[340px] rounded-2xl overflow-hidden shadow-xl">
             <img 
-              src={sumo1} 
-              alt="Robô de Sumô"
-              className="object-cover w-full h-full"
+                src={sumo1} 
+                alt="Robô de Sumô"
+                className="object-contain w-full h-full" 
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           </div>

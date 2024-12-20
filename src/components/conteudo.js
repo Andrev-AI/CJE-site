@@ -253,7 +253,7 @@ const EventPage = () => {
             </li>
             <li className="flex items-start">
               <span className="mr-2">•</span>
-              <span>Inscrições: Gratuitas, realizar no formulário (obrigatório): <a className='text-blue-500' href='https://forms.gle/CB8cGGHrSf3nMUKV6'>link formulario  </a></span>
+              <span>Inscrições: Gratuitas, realizar no formulário (obrigatório): <a className='text-blue-500' href='https://forms.gle/CB8cGGHrSf3nMUKV6' target='_blank'>link formulario  </a></span>
             </li>
             <li className="flex items-start">
               <span className="mr-2">•</span>
