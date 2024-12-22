@@ -233,7 +233,7 @@ const EventPage = () => {
             </div>
             <div className="col-span-1">
               <img
-                className="w-full rounded-lg shadow-2xl"
+                className="w-full rounded-lg shadow-2xl h-[390px]"
                 src={marcelo}
                 alt="Marcelo"
               />

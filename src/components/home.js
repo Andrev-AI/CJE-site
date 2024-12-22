@@ -6,18 +6,15 @@ import background from "./assets/background.JPG";
 const Home = () => {
   return (
     <div className="h-full w-full">
-      {/* Imagem de fundo fixa */}
       <div
         style={{
           backgroundImage: `url(${background})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
-          // filter: 'sepia(50%) saturate(100%) hue-rotate(-10deg)',
         }}
         className="w-full h-screen"
       >
-        {/* Conteúdo sobre o background */}
         <div className="w-full flex flex-row items-start justify-center ">
           <img src={logo} alt="logo terceiro informática" className="w-[28rem]" />
         </div>
