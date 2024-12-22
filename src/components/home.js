@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from "./assets/logo.png";
 import Conteudo from "./conteudo.js";
-import background from "./assets/background.JPG";
+import background from "./assets/background.jpg";
 
 const Home = () => {
   return (
