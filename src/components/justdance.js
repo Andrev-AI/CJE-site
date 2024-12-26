@@ -1,7 +1,7 @@
 import React from 'react'
 import jdv from "./assets/jdv.mp4"
 
-function Fifa() {
+function justdance() {
   return (
     <div className='w-full h-full flex flex-col lg:flex-row items-center justify-center p-5 bg-gray-100 rounded-lg shadow-lg'>
       <video src={jdv} className='w-full max-w-2xl rounded-lg lg:mr-5' controls={false} autoPlay loop muted />
@@ -14,11 +14,11 @@ function Fifa() {
         </p>
         <div className='w-full h-10 grid grid-cols-2 mt-10 gap-x-3'>
           <a href='/regulamento' className='h-12 flex items-center justify-center bg-rose-500 hover:bg-rose-700 rounded-lg text-lg p-3'>Leia as regras aqui</a>
-          <a href='https://forms.gle/UDUEp2JutKHY2Yyj6' target='_blank' className='h-12 flex items-center justify-center bg-green-500 hover:bg-green-600 rounded-lg text-lg p-3'>Inscrever-se</a>
+          <a href='https://forms.gle/UDUEp2JutKHY2Yyj6' target='_blank' rel="noreferrer" className='h-12 flex items-center justify-center bg-green-500 hover:bg-green-600 rounded-lg text-lg p-3'>Inscrever-se</a>
         </div>
       </div>
     </div>
   )
 }
 
-export default Fifa
+export default justdance

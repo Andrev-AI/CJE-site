@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaCalendarAlt, FaGamepad, FaUtensils, FaRegFileAlt, FaRobot } from 'react-icons/fa'; // Ícones modernos
 import fifacapa from './assets/fifabanner.webp';
 import justdancecapa from './assets/justdance.jpg';
 import arealivre from './assets/arealivre.jpg';
@@ -8,126 +9,8 @@ import thalita from './assets/thalita.jpeg';
 import marcelo from './assets/marcelo.jpeg';
 import robo from './assets/robosumo.webp';
 
-// [Previous icon components remain the same]
-const CalendarIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-  </svg>
-);
-
-const GamepadIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
-  </svg>
-);
-
-const UtensilsIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.5 21v-2.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M4.5 3h15M5 3v18m14-18v18" />
-  </svg>
-);
-
-const RegIcon = () => (
-<svg
-    xmlns="http://www.w3.org/2000/svg"
-    className="w-6 h-6 sm:w-8 sm:h-8"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M6 2c1.5 0 3 1 3 2.5S7.5 7 6 7H4V4c0-1.5 1-2 2-2zM18 2c-1.5 0-3 1-3 2.5S16.5 7 18 7h2V4c0-1.5-1-2-2-2z"
-    />
-    <rect
-      x="4"
-      y="7"
-      width="16"
-      height="10"
-      rx="2"
-      ry="2"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2}
-    />
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M6 10h12M6 14h8"
-    />
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M6 21c1.5 0 3-1 3-2.5S7.5 16 6 16H4v3c0 1.5 1 2 2 2zM18 21c-1.5 0-3-1-3-2.5s1.5-2.5 3-2.5h2v3c0 1.5-1 2-2 2z"
-    />
-  </svg>
-);
-
-const RobotIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    className="w-5 h-5 sm:w-6 sm:h-6"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-  >
-    {/* Antena */}
-    <line x1="12" y1="2" x2="12" y2="5" strokeLinecap="round" strokeWidth={2} />
-    <circle cx="12" cy="1" r="1" fill="currentColor" />
-
-    {/* Cabeça */}
-    <rect
-      x="6"
-      y="5"
-      width="12"
-      height="7"
-      rx="2"
-      stroke="currentColor"
-      strokeWidth={2}
-      fill="none"
-    />
-
-    {/* Olhos e Sobrancelhas */}
-    <line x1="8" y1="8" x2="9" y2="8" strokeWidth={2} strokeLinecap="round" />
-    <line x1="8" y1="7" x2="9.5" y2="7" strokeWidth={2} strokeLinecap="round" />
-    <line x1="15" y1="8" x2="16" y2="8" strokeWidth={2} strokeLinecap="round" />
-    <line x1="14.5" y1="7" x2="16" y2="7" strokeWidth={2} strokeLinecap="round" />
-
-    {/* Boca */}
-    <line x1="9" y1="10" x2="15" y2="10" strokeWidth={2} strokeLinecap="round" />
-
-    {/* Corpo */}
-    <rect
-      x="7"
-      y="12"
-      width="10"
-      height="6"
-      rx="1"
-      stroke="currentColor"
-      strokeWidth={2}
-      fill="none"
-    />
-
-    {/* Braços */}
-    <line x1="4" y1="13" x2="6" y2="13" strokeWidth={2} strokeLinecap="round" />
-    <line x1="18" y1="13" x2="20" y2="13" strokeWidth={2} strokeLinecap="round" />
-
-    {/* Pernas */}
-    <line x1="9" y1="18" x2="9" y2="21" strokeWidth={2} strokeLinecap="round" />
-    <line x1="15" y1="18" x2="15" y2="21" strokeWidth={2} strokeLinecap="round" />
-
-    {/* Pés */}
-    <line x1="8" y1="21" x2="10" y2="21" strokeWidth={2} strokeLinecap="round" />
-    <line x1="14" y1="21" x2="16" y2="21" strokeWidth={2} strokeLinecap="round" />
-  </svg>
-);
-
 const EventCard = ({ title, description, imageSrc, icon: Icon, link }) => (
-  <div className="w-full max-w-sm mx-auto bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:transform hover:scale-105">
+  <div className="w-full max-w-sm mx-auto bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl">
     <div className="relative h-48 sm:h-[200px] overflow-hidden">
       <img 
         className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" 
@@ -136,7 +19,7 @@ const EventCard = ({ title, description, imageSrc, icon: Icon, link }) => (
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
       <div className="absolute bottom-4 left-4 flex items-center gap-2">
-        <Icon />
+        <Icon className="text-white w-6 h-6" />
         <h3 className="text-lg sm:text-xl font-bold text-white">{title}</h3>
       </div>
     </div>
@@ -157,59 +40,82 @@ const EventPage = () => {
     {
       title: "FIFA 2024",
       description: "Campeonato competitivo de FIFA 2024 com premiações. Venha mostrar suas habilidades no futebol virtual!",
-      icon: GamepadIcon,
+      icon: FaGamepad,
       imageSrc: fifacapa,
       link: "/fifa"
     },
     {
       title: "Just Dance",
       description: "Competição de dança estilo batalha. Dois jogadores se enfrentam nas melhores músicas do momento!",
-      icon: GamepadIcon,
+      icon: FaGamepad,
       imageSrc: justdancecapa,
       link: "/justdance"
     },
     {
       title: "Área Livre",
       description: "Jogos livres para todo mundo fora do compeonato",
-      icon: GamepadIcon,
+      icon: FaGamepad,
       imageSrc: arealivre,
       link: "/arealivre"
     },
     {
       title: "Área de Alimentação",
       description: "Deliciosos lanches e bebidas disponíveis durante todo o evento. Experimente nosso famoso cachorro-quente!",
-      icon: UtensilsIcon,
+      icon: FaUtensils,
       imageSrc: alimentacao,
-      link: "/alimentacao"
+      link: "/alimentos"
     },
     {
       title: "Regulamento ilustrado",
       description: "Veja o regulamento de forma ilustrada. E também o PDF na íntegra. Importante para todos os participantes.",
-      icon: RegIcon,
+      icon: FaRegFileAlt,
       imageSrc: regulamento,
       link: "/regulamento"
     },
     {
       title: "Robôs Sumô",
       description: "Campeonato do Projeto de robótica. Fase 2, Robôs de sumô autônomos. Acesse o regulamento também.",
-      icon: RobotIcon,
+      icon: FaRobot,
       imageSrc: robo,
       link: "/robotica"
     }
   ];
 
+  const additionalInfo = [
+    {
+      icon: FaCalendarAlt,
+      title: "Data e Local",
+      description: "29 de Janeiro 2025, IF Goiano - Campus Campos Belos. Auditório"
+    },
+    {
+      icon: FaGamepad,
+      title: "Inscrições",
+      description: "Gratuitas, realizar no formulário (obrigatório):",
+      link: "https://forms.gle/CB8cGGHrSf3nMUKV6"
+    },
+    {
+      icon: FaUtensils,
+      title: "Praça de Alimentação",
+      description: "Deliciosos lanches e bebidas disponíveis durante todo o evento."
+    },
+    {
+      icon: FaRobot,
+      title: "Área Livre",
+      description: "Jogos diversos (Mortal Kombat, Tênis, Brawlhalla e outros)."
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-zinc-500 to-black text-white">
+    <div className="min-h-screen bg-gradient-to-b from-zinc-800 to-black text-white">
       <section className="container mx-auto px-4 py-8 sm:py-12">
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          {/* Left content column */}
-          <div className="space-y-6">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
+          <div className="space-y-6 relative z-10">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               Campeonato de Jogos Eletrônicos
             </h1>
             <div className="flex items-center gap-2">
-              <CalendarIcon />
-              <span className="text-lg sm:text-xl text-blue-400">29 de Janeiro 2025</span>
+              <FaCalendarAlt className="text-white w-6 h-6" />
+              <span className="text-lg sm:text-xl text-white">29 de Janeiro 2025</span>
             </div>
             <p className="text-base sm:text-lg text-gray-300">
               Evento organizado pelo 3º Informática do IF Goiano CB para a disciplina de Educação Física.
@@ -223,7 +129,7 @@ const EventPage = () => {
 
           {/* Right images column */}
           <div className="relative grid grid-cols-2 gap-4">
-            <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-3xl -z-10" />
+            <div className="absolute inset-0 bg-blue-500/20 rounded-full blur-3xl -z-10" /> {/* Efeito de fundo com z-index negativo */}
             <div className="col-span-1">
               <img
                 className="w-full rounded-lg shadow-2xl"
@@ -233,7 +139,7 @@ const EventPage = () => {
             </div>
             <div className="col-span-1">
               <img
-                className="w-full rounded-lg shadow-2xl h-[390px]"
+                className="w-full rounded-lg shadow-2xl"
                 src={marcelo}
                 alt="Marcelo"
               />
@@ -252,26 +158,20 @@ const EventPage = () => {
       </section>
 
       <section className="container mx-auto px-4 py-8 sm:py-12">
-        <div className="bg-gray-800/50 rounded-xl p-4 sm:p-6">
-          <h2 className="text-xl sm:text-2xl font-bold mb-4">Informações Adicionais</h2>
-          <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-300">
-            <li className="flex items-start">
-              <span className="mr-2">•</span>
-              <span>Local: IF Goiano - Campus Campos Belos. Auditório</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2">•</span>
-              <span>Inscrições: Gratuitas, realizar no formulário (obrigatório): <a className='text-blue-500' href='https://forms.gle/CB8cGGHrSf3nMUKV6' target='_blank'>link formulário  </a></span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2">•</span>
-              <span>Área livre para jogos diversos (Mortal Kombat, Tênis, Brawlhalla e outros)</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2">•</span>
-              <span>Praça de alimentação com lanches e bebidas</span>
-            </li>
-          </ul>
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Informações Adicionais</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          {additionalInfo.map((info, index) => (
+            <div key={index} className="bg-gray-800/50 rounded-xl p-6 text-center hover:bg-gray-800/70 transition-colors">
+              <info.icon className="w-8 h-8 mx-auto text-blue-400" />
+              <h3 className="text-xl font-semibold mt-4">{info.title}</h3>
+              <p className="text-gray-300 mt-2">{info.description}</p>
+              {info.link && (
+                <a href={info.link} className="mt-4 inline-block text-blue-400 hover:text-blue-300 transition" target='_blank' rel="noreferrer">
+                  Acessar formulário
+                </a>
+              )}
+            </div>
+          ))}
         </div>
       </section>
     </div>

@@ -45,7 +45,7 @@ const Robotica = () => {
                           shadow-lg hover:shadow-rose-500/50">
                 Regras Ilustradas
               </a>
-              <a target='_blank' href="https://docs.google.com/document/d/1rPc_Z7cQ2fNyC22KNRzAT-ZPJHntQAQhRBXvDvnomT0/edit?tab=t.0"
+              <a target='_blank' rel="noreferrer" href="https://docs.google.com/document/d/1rPc_Z7cQ2fNyC22KNRzAT-ZPJHntQAQhRBXvDvnomT0/edit?tab=t.0"
                  className="flex-1 py-3 px-3 bg-white/20 hover:bg-white/30 
                           rounded-lg text-white text-lg font-semibold 
                           transition-colors duration-300 text-center

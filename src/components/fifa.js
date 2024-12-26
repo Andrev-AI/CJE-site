@@ -12,7 +12,7 @@ function Fifa() {
         </p>
         <div className='w-full h-10 grid grid-cols-2 mt-10 gap-x-3'>
           <a href='/regulamento' className='h-12 flex items-center justify-center bg-rose-500 hover:bg-rose-700 rounded-lg text-lg p-3'>Leia as regras aqui</a>
-          <a href='https://forms.gle/UDUEp2JutKHY2Yyj6' target='_blank' className='h-12 flex items-center justify-center bg-green-500 hover:bg-green-600 rounded-lg text-lg p-3'>Inscrever-se</a>
+          <a href='https://forms.gle/UDUEp2JutKHY2Yyj6' target='_blank' rel="noreferrer" className='h-12 flex items-center justify-center bg-green-500 hover:bg-green-600 rounded-lg text-lg p-3'>Inscrever-se</a>
         </div>
         
       </div>
