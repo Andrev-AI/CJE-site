@@ -22,7 +22,7 @@ const Regulamento = () => {
       ]
     },
     {
-      title: "Tempo",
+      title: "Cronograma",
       icon: "⏰",
       content: [
         "Data: Janeiro 29, 2025",
@@ -82,7 +82,7 @@ const Regulamento = () => {
       <div className="mt-8 p-6 bg-white rounded-lg shadow-md border border-gray-200">
         <div className="flex items-center gap-3 mb-4">
           <span className="text-2xl">📞</span>
-          <h2 className="text-xl font-semibold">Contact Information</h2>
+          <h2 className="text-xl font-semibold">Informações de Contato</h2>
         </div>
         <div className="space-y-2">
           <p>Para dúvidas e suporte:</p>

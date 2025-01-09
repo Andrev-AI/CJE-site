@@ -60,7 +60,7 @@ const EventPage = () => {
     },
     {
       title: "Área de Alimentação",
-      description: "Deliciosos lanches e bebidas disponíveis durante todo o evento. Experimente nosso famoso cachorro-quente!",
+      description: "Deliciosos lanches e bebidas disponíveis durante todo o evento. Experimente nosso cachorro-quente!",
       icon: FaUtensils,
       imageSrc: alimentacao,
       link: "/alimentos"
@@ -117,13 +117,14 @@ const EventPage = () => {
               <FaCalendarAlt className="text-white w-6 h-6" />
               <span className="text-lg sm:text-xl text-white">29 de Janeiro 2025</span>
             </div>
-            <p className="text-base sm:text-lg text-gray-300">
-              Evento organizado pelo 3º Informática do IF Goiano CB para a disciplina de Educação Física.
-              Participe das competições de FIFA 2024 e Just Dance, ou divirta-se na área livre de jogos!
+            <p className="text-base sm:text-lg text-gray-100">
+              Evento organizado pelo 3º Informática do IF Goiano CB. Evento <strong className='font-bold'>Gratuito!</strong> Participe das competições de FIFA, Just Dance e Mario Kart ou divirta-se na área livre de jogos!
             </p>
             <div className="p-4 bg-gray-800/50 rounded-lg">
-              <h2 className="text-lg sm:text-xl font-semibold mb-2">Apoiadores:</h2>
-              <p className="text-gray-300 text-sm sm:text-base">Thalita Cintra, Marcelo Brandão, André Moura, André Wild, Amarildo, Thiago C. Thiago Dias, Guilherme Costa, Gusthavo Oliveira, Darsílvio e outros</p>
+              <h2 className="text-lg sm:text-xl font-semibold mb-2"> Organizadores:</h2>
+              <p className="text-gray-100 text-sm sm:text-base">Thalita Cintra, Marcelo Brandão, André Moura, André Wild, Thiago C., Guilherme Costa, Gusthavo Oliveira, 3º Info</p>
+              <h2 className="mt-6 text-lg sm:text-xl font-semibold mb-2">Apoiadores:</h2>
+              <p className="text-gray-100 text-sm sm:text-base">Amarildo, Thiago Dias, Guilherme Costa, Gusthavo Oliveira, Darsílvio e outros</p>
             </div>
           </div>
 

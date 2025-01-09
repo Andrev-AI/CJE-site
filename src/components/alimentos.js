@@ -58,8 +58,8 @@ const Alimentos = () => {
       options: ['Pão Macio', 'Salsicha', 'Batata Palha', 'Molho de Tomate'],
       image: '🌭',
       pricing: [
-        '1 salsicha: R$5,00',
-        '2 salsichas: R$8,00'
+        '1 salsicha: R$8,00',
+        '2 salsichas: R$10,00'
       ]
     },
     {

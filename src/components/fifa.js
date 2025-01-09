@@ -3,7 +3,7 @@ import fifavideo from "./assets/fifav.mp4"
 
 function Fifa() {
   return (
-    <div className='w-full h-full flex flex-col lg:flex-row items-center justify-center p-5 bg-gray-100 rounded-lg shadow-lg'>
+    <div className='w-full h-full flex flex-col lg:flex-row items-center justify-center p-5 bg-gray-100 rounded-lg shadow-lg'>   
       <video src={fifavideo} className='w-full max-w-2xl rounded-lg lg:mr-5' controls={false} autoPlay loop muted />
       <div className='text-center mt-10 lg:mt-0 lg:ml-5'>
       <h3 className='text-3xl font-bold text-gray-800 mb-5'>FIFA 2024</h3>

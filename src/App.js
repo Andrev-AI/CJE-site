@@ -19,21 +19,45 @@ const LoadingScreen = () => (
 
 const RouteHandler = () => {
   const [showLoader, setShowLoader] = useState(true);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
   const location = useLocation();
-  
+
+  // Função para verificar se o dispositivo é mobile
+  const isMobile = () => window.innerWidth <= 768;
+
   useEffect(() => {
-    if (location.pathname === '/') {
-      const visited = localStorage.getItem('firstVisit');
-      if (!visited) {
-        localStorage.setItem('firstVisit', 'true');
-        const timer = setTimeout(() => setShowLoader(true), 4000);
-        return () => clearTimeout(timer);
+    const loadImages = async () => {
+      const images = document.querySelectorAll('img');
+      const imagePromises = Array.from(images).map(img => {
+        if (img.complete) return Promise.resolve();
+        return new Promise((resolve, reject) => {
+          img.onload = resolve;
+          img.onerror = reject;
+        });
+      });
+
+      try {
+        await Promise.all(imagePromises);
+        setImagesLoaded(true);
+      } catch (error) {
+        console.error('Erro ao carregar imagens:', error);
       }
-    }
-    setShowLoader(false);
+    };
+
+    loadImages();
   }, [location]);
 
-  if (showLoader && location.pathname === '/') {
+  useEffect(() => {
+    // Forçar o loading por um tempo mínimo (1 segundo)
+    const timer = setTimeout(() => {
+      setShowLoader(false);
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, [location]);
+
+  // Exibir o loader se showLoader for true ou as imagens não estiverem carregadas
+  if (showLoader || !imagesLoaded) {
     return <LoadingScreen />;
   }
 
