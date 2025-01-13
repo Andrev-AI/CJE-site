@@ -125,6 +125,7 @@ const EventPage = () => {
               <p className="text-gray-100 text-sm sm:text-base">Thalita Cintra, Marcelo Brandão, André Moura, André Wild, Thiago C., Guilherme Costa, Gusthavo Oliveira, 3º Info</p>
               <h2 className="mt-6 text-lg sm:text-xl font-semibold mb-2">Apoiadores:</h2>
               <p className="text-gray-100 text-sm sm:text-base">Amarildo, Thiago Dias, Guilherme Costa, Gusthavo Oliveira, Darsílvio e outros</p>
+              <p className="text-gray-100 font-bold text-sm sm:text-base">Feito por: André Moura Santos - 3º Info 2024 (ele sabe das coisas)</p>
             </div>
           </div>
 

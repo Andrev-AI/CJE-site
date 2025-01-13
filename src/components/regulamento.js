@@ -38,7 +38,8 @@ const Regulamento = () => {
         "Chegar 5 minutos antes do horário referido anteriormente",
         "Jogo limpo, respeito mútuo e mostrar espírito esportivo",
         "Siga regras e formatos específicos do jogo",
-        "Não é permitido desrespeito verbal"
+        "Não é permitido desrespeito verbal",
+        "Só poderá estar escrito em 1 campeonato. Se inscrever-se em mais de 1 será contabilizado apenas o 1º formulário enviado."
       ]
     }
   ];
