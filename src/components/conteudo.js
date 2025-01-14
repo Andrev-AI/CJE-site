@@ -121,7 +121,9 @@ const EventPage = () => {
               Evento organizado pelo 3º Informática do IF Goiano CB. Evento <strong className='font-bold'>Gratuito!</strong> Participe das competições de FIFA, Just Dance e Mario Kart ou divirta-se na área livre de jogos!
             </p>
             <div className="p-4 bg-gray-800/50 rounded-lg">
-              <h2 className="text-lg sm:text-xl font-semibold mb-2"> Organizadores:</h2>
+              <h2 className="text-lg sm:text-xl font-semibold mb-2">Site por:</h2>
+              <p className="text-gray-100 text-sm sm:text-base">André Moura</p>
+              <h2 className="text-lg sm:text-xl font-semibold mb-2 mt-2"> Organizadores:</h2>
               <p className="text-gray-100 text-sm sm:text-base">Thalita Cintra, Marcelo Brandão, André Moura, André Wild, Thiago C., Guilherme Costa, Gusthavo Oliveira, 3º Info</p>
               <h2 className="mt-6 text-lg sm:text-xl font-semibold mb-2">Apoiadores:</h2>
               <p className="text-gray-100 text-sm sm:text-base">Amarildo, Thiago Dias, Guilherme Costa, Gusthavo Oliveira, Darsílvio e outros</p>
@@ -175,7 +177,7 @@ const EventPage = () => {
           ))}
         </div>
           <div className='w-full flex items-center justify-center text-center mt-5'>
-          <p className="text-gray-100 font-bold text-sm sm:text-base text-center">Feito por: 💚 André Moura Santos - 3º Info 2024 💞 (ele sabe das coisas)</p>
+          <p className="text-gray-100 font-bold text-sm sm:text-base text-center">Feito por: 💚 André Moura Santos - 3º Info 2024 💞 (ele sabe das coisas). Usando React.js</p>
           </div>
       </section>
     </div>
